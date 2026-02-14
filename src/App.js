@@ -9,7 +9,7 @@ function App() {
   const [items, setItems] = useState([{ desc: '', qty: 1, price: 0 }]);
   const [client, setClient] = useState('');
 
-  const PRODUCT_PERMALINK = "your_product_permalink"; // Get this from your Gumroad product URL
+  const PRODUCT_PERMALINK = "horgqm"; // Get this from your Gumroad product URL
 
   useEffect(() => {
     const savedStatus = localStorage.getItem('app_unlocked');
