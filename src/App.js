@@ -49,7 +49,7 @@ function App() {
           <p>Enter your license key to activate.</p>
           <input 
             type="text" 
-            placeholder="PRO-INV-2026" 
+            placeholder="XXXX-XXXX-XXXX" 
             style={{ padding: '12px', borderRadius: '5px', width: '100%', margin: '15px 0', background: '#0f172a', color: 'white', border: '1px solid #334155' }}
             onChange={(e) => setLicenseKey(e.target.value)}
           />
