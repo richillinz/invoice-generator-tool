@@ -29,6 +29,7 @@ function App() {
   const handleUnlock = async () => {
     setLoading(true);
     // This query MUST match your Supabase column name: license_key
+    console.log("Checking key:", licenseKey);
     const { data, error } = await supabase
       .from('activations')
       .select('*')
@@ -48,6 +49,7 @@ function App() {
       }
     } else {
       console.error("Database Error or No Match:", error);
+      alert("System Error: " + (error ? error.message : "Key not found in table"));
       alert("INVALID KEY: Not found in RCL Ledger.");
     }
     setLoading(false);
