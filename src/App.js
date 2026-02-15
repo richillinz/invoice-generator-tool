@@ -3,6 +3,7 @@ import { supabase } from './supabaseClient';
 
 function App() {
   const [isLocked, setIsLocked] = useState(true);
+  const isAdmin = (licenseKey === "RCL-ADMIN-MASTER-2026");
   const [licenseKey, setLicenseKey] = useState('');
   const [loading, setLoading] = useState(false);
 
